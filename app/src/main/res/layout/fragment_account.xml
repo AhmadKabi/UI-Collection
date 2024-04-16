@@ -196,29 +196,45 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnEditProfile"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="38dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:paddingVertical="0dp"
         android:text="Edit Profile"
         android:textColor="@color/black"
         app:backgroundTint="@color/grey_search"
         app:cornerRadius="8dp"
+        app:layout_constraintEnd_toStartOf="@id/btnShareProfile"
         app:layout_constraintStart_toStartOf="@id/txTopBarUsername"
         app:layout_constraintTop_toBottomOf="@id/txAbout" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnShareProfile"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="38dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:paddingVertical="0dp"
         android:text="Share Profile"
         android:textColor="@color/black"
         app:backgroundTint="@color/grey_search"
         app:cornerRadius="8dp"
+        app:layout_constraintEnd_toStartOf="@id/btnSuggestion"
         app:layout_constraintStart_toEndOf="@id/btnEditProfile"
         app:layout_constraintTop_toBottomOf="@id/txAbout" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnSuggestion"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_corner8_grey_search"
+        android:padding="6dp"
+        app:layout_constraintBottom_toBottomOf="@id/btnEditProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnEditProfile"
+        app:srcCompat="@drawable/ic_suggestion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
