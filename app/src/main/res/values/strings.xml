@@ -16,6 +16,13 @@
     <string name="reel">Reel</string>
     <string name="account">Account</string>
     <string name="sponsored">Sponsored</string>
+    <string name="posts">posts</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="in_quite_mode">In quite mode</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="share_profile">Share Profile</string>
+    <string name="follow">Follow</string>
 
     <string-array name="search_feeds">
         <item>1</item>
