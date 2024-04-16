@@ -10,6 +10,7 @@ import com.kodingan.instagramclone.databinding.FragmentAccountBinding
 class AccountFragment : Fragment() {
 
     lateinit var binding: FragmentAccountBinding
+    private lateinit var template6PagerAdapter: Template6PagerAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -19,6 +20,22 @@ class AccountFragment : Fragment() {
         binding = FragmentAccountBinding.inflate(layoutInflater)
         return binding.root
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        buildViewPager()
+
+    }
+
+    private fun buildViewPager() {
+        template6PagerAdapter = Template6PagerAdapter(childFragmentManager)
+        binding.viewPager.adapter = template6PagerAdapter
+        binding.viewPager.offscreenPageLimit = 2
+        binding.tabLayout.setupWithViewPager(binding.viewPager)
+
+    }
+
 
     companion object {
 
