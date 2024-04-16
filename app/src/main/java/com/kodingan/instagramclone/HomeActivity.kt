@@ -24,13 +24,12 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         buildBottomNavigation()
     }
 
     private fun buildBottomNavigation() {
 
-        var currentFragment: Fragment = SearchFragment.newInstance()
+        var currentFragment: Fragment = AccountFragment.newInstance()
         supportFragmentManager.beginTransaction()
             .replace(R.id.hostFragment, currentFragment)
             .commit()

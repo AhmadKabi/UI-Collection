@@ -23,5 +23,6 @@
     <color name="grey_search">#efeeef</color>
     <color name="grey_search_2">#5c5150</color>
     <color name="grey_overlay">#806A5F5F</color>
+    <color name="grey_tab_unselected">#999999</color>
 
 </resources>

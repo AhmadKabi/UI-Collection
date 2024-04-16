@@ -237,12 +237,14 @@
                     android:layout_height="44dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="30dp"
                     android:paddingVertical="0dp"
                     android:text="@string/edit_profile"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:backgroundTint="@color/grey_search"
                     app:cornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/btnShareProfile"
                     app:layout_constraintStart_toStartOf="@id/txTopBarUsername"
                     app:layout_constraintTop_toBottomOf="@id/txAbout" />
@@ -279,23 +281,19 @@
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
-        <!--             app:tabMode="fixed"-->
-        <!--            app:tabIndicatorAnimationDuration="1000"-->
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_collapseMode="pin"
-            app:tabIndicator="@drawable/bg_tab_indicator"
-            app:tabIndicatorColor="@color/colorPrimary"
-            app:tabIndicatorFullWidth="false"
-            app:tabIndicatorHeight="4dp"
-            app:tabMode="scrollable"
+            app:tabIconTint="@color/selector_account_tab"
+            app:tabIndicatorColor="@color/black"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="fixed"
             app:tabPaddingEnd="16dp"
             app:tabPaddingStart="16dp"
-            app:tabSelectedTextColor="@color/colorPrimary"
-            app:tabTextAppearance="@style/TabTitle"
-            app:tabTextColor="@color/grey_search" />
+            app:tabSelectedTextColor="@color/black" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
