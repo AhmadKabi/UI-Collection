@@ -30,7 +30,7 @@ class HomeActivity : AppCompatActivity() {
 
     private fun buildBottomNavigation() {
 
-        var currentFragment: Fragment = SearchFragment.newInstance()
+        var currentFragment: Fragment = AccountFragment.newInstance()
         supportFragmentManager.beginTransaction()
             .replace(R.id.hostFragment, currentFragment)
             .commit()
