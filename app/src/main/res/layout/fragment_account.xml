@@ -276,19 +276,17 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Rounded"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/key_button"
+        android:src="@drawable/ic_key"
+        app:backgroundTint="@color/black"
+        app:tint="@color/white" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

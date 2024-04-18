@@ -23,6 +23,7 @@
     <string name="edit_profile">Edit Profile</string>
     <string name="share_profile">Share Profile</string>
     <string name="follow">Follow</string>
+    <string name="key_button">Key button</string>
 
     <string-array name="search_feeds">
         <item>1</item>
